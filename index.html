@@ -9,14 +9,14 @@
 </head>
 <body>
 
+  <div class="container">
   <header class="header"><!-- блок 'header' -->
-    <div class="container">
-      <div class="logo header__logo"><!-- к блоку "logo" примиксован элемент "logo" блока "header" -->
-        <a href="/" class="header__logo-link"><!--  -->
-          <img src="./img/logo.png" alt="Axion" class="header__logo-img"><!-- Элемент блока 'header' -->
-        </a> <!-- /.header__logo-link -->
-      </div> <!-- /.header__logo -->
-      <nav class="navbar header__navbar"><!-- 'navbar' - самостоятельный блок;  'header__navbar' элемент хидера -->
+      <nav class="navbar header__navbar">
+        <div class="logo header__logo">
+          <a href="/" class="header__logo-link">
+            <img src="./img/logo.png" alt="Axion" class="header__logo-img"><!-- Элемент блока 'header' -->
+          </a> <!-- /.header__logo-link -->
+        </div> <!-- /.header__logo -->
         <div class="navbar__item"><a href="" class="navbar__link">Shop</a></div>
         <div class="navbar__item"><a href="" class="navbar__link">News</a></div>
         <div class="navbar__item"><a href="" class="navbar__link">Team</a></div>
@@ -32,75 +32,94 @@
         </div>
         <div class="navbar__item"><a href="" class="navbar__link">Sign in</a></div>
         <div class="navbar__item"><a href="" class="navbar__link">Cart</a></div>
-        <div class="navbar__item"><a href="" class="navbar__link--count">1</a></div>
-        <div class="navbar__item"><a href="" class="navbar__link"><img src="./img/english.png" alt="" class="lang"></a></div>
+        <div class="navbar__item"><a href="" class="navbar__link"><img src="./img/eng.svg" alt="" class="lang"></a></div>
       </nav><!-- /.navbar header__navbar -->
-    </div>
-  </header><!-- /.header -->
-  
-  <section class="first-section">
-    <div class="container">
-      <div class="first-section__block">
-        <h1 class="title first-section__title">Legendary footwear reborn.</h1>
-        <a href="" class="link-more first-section__link-more">Shop now</a>
+    </header><!-- /.header -->
+    
+    <section class="section market-section">
+      
+      <div class="banner">
+        <h1 class="title banner__title">Legendary footwear reborn.</h1>
+        <a href="" class="link-more banner__link-more">Shop now</a>
       </div>
-      <h2 class="section__subtitle first-section__subtitle">Featured product</h2>
-      <div class="product">
-        <div class="product-item">
-          <div class="product-item__pic"><img src="./img/shoes-1.png" alt=""></div>
-          <span class="product-item__name">Atlas Black/Rasta Axion</span>
-          <div class="product-item__price-color">
-            <span class="product-item__price">$89.00</span>
-            <div class="product-item__colors">
-              <a href="" class="product-item__color"><span class="circle"></span></a>
-              <a href="" class="product-item__color"><span class="circle"></span></a>
-              <a href="" class="product-item__color"><span class="circle"></span></a>
-              <a href="" class="product-item__color"><span class="circle"></span></a>
+      
+      <h2 class="section__subtitle market-section__subtitle">Featured product</h2>
+      
+      <!-- Блок с карточками товаров -->
+      <div class="products">
+        <div class="product-card products__product-card">
+          <div class="product-card__picture"><img src="./img/shoes-1.png" alt=""></div>
+          <span class="product-card__name">Atlas Black/Rasta Axion</span>
+          
+          <!-- Блок-элемент с выбором цвета и зависимой от него ценой -->
+          <div class="color-option product-card__color-option">
+            <span class="product-card__price color-option__price">$89.00</span>
+            <!-- Блок-элемент  с цветными круглешками -->
+            <div class="circles color-option__circles">
+              <a href="#" class="circles__link"></a>
+              <a href="#" class="circles__link"></a>
+              <a href="#" class="circles__link"></a>
+              <a href="#" class="circles__link"></a>
             </div>
           </div>
         </div>
-        <div class="product-item">
-          <div class="product-item__pic"><img src="./img/shoes-2.png" alt=""></div>
-          <span class="product-item__name">Camel/Chili Pepper Axion</span>
-          <div class="product-item__price-color">
-            <span class="product-item__price">$74.00</span>
-            <div class="product-item__colors">
-              <a href="" class="product-item__color"><span class="circle"></span></a>
-              <a href="" class="product-item__color"><span class="circle"></span></a>
-              <a href="" class="product-item__color"><span class="circle"></span></a>
-              <a href="" class="product-item__color"><span class="circle"></span></a>
+        
+        <!-- Карточка товара -->
+        <div class="product-card products__product-card">
+          <div class="product-card__picture"><img src="./img/shoes-2.png" alt=""></div>
+          <span class="product-card__name">Camel/Chili Pepper Axion</span>
+          
+          <!-- Блок-элемент с выбором цвета и зависимой от него ценой -->
+          <div class="color-option product-card__color-option">
+            <span class="product-card__price color-option__price">$74.00</span>
+            <!-- Блок-элемент  с цветными круглешками -->
+            <div class="circles color-option__circles">
+              <a href="#" class="circles__circle-1"><div class="circles__circle"></div></a>
+              <a href="#" class="circles__circle-2"><div class="circles__circle circles__circle--active"></div></a>
+              <a href="#" class="circles__circle-3"><div class="circles__circle"></div></a>
+              <a href="#" class="circles__circle-4"><div class="circles__circle"></div></a>
             </div>
           </div>
         </div>
-        <div class="product-item">
-          <div class="product-item__pic"><img src="./img/shoes-3.png" alt=""></div>
-          <span class="product-item__name">Mandel Smoke/Rust Axion</span>
-          <div class="product-item__price-color">
-            <span class="product-item__price">$69.00</span>
-            <div class="product-item__colors">
-              <a href="" class="product-item__color"><span class="circle"></span></a>
-              <a href="" class="product-item__color"><span class="circle"></span></a>
-              <a href="" class="product-item__color"><span class="circle"></span></a>
-              <a href="" class="product-item__color"><span class="circle"></span></a>
+
+        <!-- Карточка товара -->
+        <div class="product-card products__product-card">
+          <div class="product-card__picture"><img src="./img/shoes-3.png" alt=""></div>
+          <span class="product-card__name">Mandel Smoke/Rust Axion</span>
+          
+          <!-- Блок-элемент с выбором цвета и зависимой от него ценой -->
+          <div class="color-option product-card__color-option">
+            <span class="product-card__price color-option__price">$69.00</span>
+            <!-- Блок-элемент  с цветными круглешками -->
+            <div class="circles color-option__circles">
+              <a href="#" class="circles__circle-1"><div class="circles__circle"></div></a>
+              <a href="#" class="circles__circle-2"><div class="circles__circle circles__circle--active"></div></a>
+              <a href="#" class="circles__circle-3"><div class="circles__circle"></div></a>
+              <a href="#" class="circles__circle-4"><div class="circles__circle"></div></a>
             </div>
           </div>
         </div>
-        <div class="product-item">
-          <div class="product-item__pic"><img src="./img/shoes-4.png" alt=""></div>
-          <span class="product-item__name">Cloud/Electric Blue Axion</span>
-          <div class="product-item__price-color">
-            <span class="product-item__price">$69.00</span>
-            <div class="product-item__colors">
-              <a href="" class="product-item__color"><span class="circle"></span></a>
-              <a href="" class="product-item__color"><span class="circle"></span></a>
-              <a href="" class="product-item__color"><span class="circle"></span></a>
-              <a href="" class="product-item__color"><span class="circle"></span></a>
+
+        <!-- Карточка товара -->
+        <div class="product-card products__product-card">
+          <div class="product-card__picture"><img src="./img/shoes-4.png" alt=""></div>
+          <span class="product-card__name">Cloud/Electric Blue Axion</span>
+          
+          <!-- Блок-элемент с выбором цвета и зависимой от него ценой -->
+          <div class="color-option product-card__color-option">
+            <span class="product-card__price color-option__price">$69.00</span>
+            <!-- Блок-элемент  с цветными круглешками -->
+            <div class="circles color-option__circles">
+              <a href="#" class="circles__circle-1"><div class="circles__circle"></div></a>
+              <a href="#" class="circles__circle-2"><div class="circles__circle circles__circle--active"></div></a>
+              <a href="#" class="circles__circle-3"><div class="circles__circle"></div></a>
+              <a href="#" class="circles__circle-4"><div class="circles__circle"></div></a>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
+  </div>
   
 <section class="section second-section">
   <div class="container">

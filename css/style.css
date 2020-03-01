@@ -12,19 +12,121 @@ body {
   font-size: 12px;
 }
 
-.link-more {
+.container {
+  max-width: 1030px;
+  margin: 0 auto;
+}
+
+.header {
+  min-height: 96px;
+  padding: 32px 0 8px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  display: inline-block;
+}
+
+.header__logo {
+  margin-right: 45px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+
+.navbar__item {
+  margin-right: 35px;
+}
+
+.navbar__item:nth-child(6) {
+  margin-right: 192px;
+}
+
+.navbar__item:nth-child(9)::after {
+  content: "1";
+  display: inline-block;
+  font-size: 9px;
+  text-align: center;
+  line-height: 16px;
+  color: #fff;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #000;
+  margin-left: 4px;
+}
+
+.navbar__item:last-child {
+  margin-right: 0;
+}
+
+
+
+.navbar__link {
   font-weight: 700;
   text-transform: uppercase;
-} 
-.navbar__link {
+  text-decoration: none;
+  color: #000;
+}
+
+.search-form {
+  width: 178px;
+  border-bottom: 1px solid #000;
+}
+
+.search-form__input {
+  width: 160px;
+  border: none;
+  outline: none;
+}
+
+/* .search-form__link {
+  ЛУПА
+}
+ */
+/* ------------------- Стили 1 секции -------------- */
+
+.market-section {
+  padding-top: 20px;
+}
+
+.banner {
+  min-height: 280px;
+  background: no-repeat url("../img/street.jpg");
+  border: 1px solid transparent; /* Почему без рамки не работает центрирование??? */
+}
+
+.banner__title {
+  display: block;
+  max-width: 196px;
+  margin: 90px 0 20px 60px;
+  font-size: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.link-more {
   font-weight: 700;
   text-transform: uppercase;
 }
 
-.first-section__title {
-  font-size: 30px;
-  font-weight: 700;
-  text-transform: uppercase;
+.banner__link-more {
+  margin-left: 60px;
+}
+
+.banner__link-more:visited {
+  color: #fff;
+}
+
+.banner__link-more::after {
+  content: url("../img/Arrow.svg");
+  margin-left: 5px;
 }
 
 .section__subtitle {
@@ -33,13 +135,87 @@ body {
   text-transform: uppercase;
 }
 
-.product-item__name {
+.market-section__subtitle {
+  text-align: center;
+  margin: 54px 0 15px 0;
+}
+
+.products {
+  display: flex;
+  justify-content: space-between;
+}
+
+.product-card {
+  position: relative;
+/*   width: 230px;
+  height: 261px;
+  border: 1px solid #fff;
+  background-color: #fff; */
+}
+
+.product-card::after {
+  content: "";
+  position: absolute;
+  top: 40px;
+  right: 110%; /* Найти лучшее решение */
+  /* display: inline-block; */
+  width: 1px;
+  height: 100px;
+  background:  #000000;
+  opacity: 0.2;
+}
+
+.product-card:first-child::after {
+  display: none;
+}
+
+.product-card__picture {
+  margin: 0 0 25px 23px;
+}
+
+.product-card__name {
+  display: inline-block;
   font-size: 12px;
   font-weight: 400;
+  margin-bottom: 10px;
 }
-.product-item__price {
+
+.color-option {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* .product-card__colors {} */
+
+.circles {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.circles__link {
+  width: 7px;
+  height: 7px;
+  border: 1;
+  border-radius: 50%;
+  background: #c4c4c4;
+  margin-left: 8px;
+  transition: .3s;
+}
+
+.circles__link:first-child {
+  background: red;
+}
+
+.circles__circle:hover {
+  transform: scale(1.5);
+}
+
+.product-card__price {
   font-size: 14px;
   font-weight: 700;
+  /* margin-right: 40px; */
 }
 
 .video-block__slogan {
@@ -68,6 +244,6 @@ body {
   text-transform: uppercase;
 }
 
-.footer-navbar {
-  /* color: #ffffff; */
-}
+/* .footer-navbar {
+  color: #ffffff;
+} */
