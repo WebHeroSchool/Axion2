@@ -189,7 +189,7 @@ body {
   font-weight: 400;
   text-align: left;
   /* margin-left: -15px; */
-  margin-bottom: 6px;
+  margin-bottom: 5px;
 }
 
 .color-option {
@@ -216,8 +216,35 @@ body {
   transition: .3s;
 }
 
-.circles__link:first-child {
-  background: red;
+.circles__link--black {
+  background-color: #0e1211;
+}
+
+.circles__link--red {
+  background-color: #b62e3c;
+}
+.circles__link--yellow {
+  background-color: #fdb431;
+}
+
+.circles__link--orange {
+  background-color: #e29d69;
+}
+
+.circles__link--darkred {
+  background-color: #762e31;
+}
+
+.circles__link--blue {
+  background-color: #41479b;
+}
+
+.circles__link--aqua {
+  background-color: #257da9;
+}
+
+.circles__link:last-child {
+  background-color: #fdb431;
 }
 
 .circles__link:hover {
