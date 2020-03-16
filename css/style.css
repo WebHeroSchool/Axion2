@@ -22,7 +22,6 @@ body {
   min-height: 96px;
   padding: 30px 0 8px 0;
   display: flex;
-  justify-content: space-between;
 }
 
 .logo {
@@ -32,14 +31,24 @@ body {
 .header__logo {
   margin-right: 45px;
   margin-top: 5px;
+  max-width: 55px;
+  max-height: 56px;
+}
+
+.header__logo-img {
+  width: 100%;
+  height: 100%;
+}
+
+.header__logo-mobile {
+  display: none;
 }
 
 .navbar {
   display: flex;
-  justify-content: space-around;
+  /* justify-content: space-around; */
   align-items: center;
 }
-
 
 .navbar__item {
   margin-right: 35px;
@@ -67,8 +76,6 @@ body {
   margin-right: 0;
 }
 
-
-
 .navbar__link {
   font-weight: 700;
   text-transform: uppercase;
@@ -88,26 +95,29 @@ body {
   outline: none;
 }
 
-/* .search-form__link {
-  ЛУПА
+.burger {
+  display: none;
 }
- */
+
+
 /* ------------------- Стили 1 секции -------------- */
 
 .market-section {
-  padding-top: 18px;
+  padding-top: 19px;
 }
 
 .banner {
   min-height: 280px;
-  background: no-repeat url("../img/street.jpg");
-  border: 1px solid transparent; /* Почему без рамки не работает центрирование??? */
+  padding: 65px 0 0 58px;
+  background-image: url("../img/street.jpg");
+  /* border: 1px solid transparent; без этой границы верхний отступ заголовка 
+  считался не от края баннера а извне...отодвинул заголовок падингом банера */
 }
 
 .banner__title {
   display: block;
   max-width: 196px;
-  margin: 90px 0 15px 58px;
+  margin-bottom: 15px;
   font-size: 30px;
   font-weight: 700;
   text-transform: uppercase;
@@ -120,17 +130,13 @@ body {
   text-transform: uppercase;
 }
 
-.banner__link-more {
-  margin-left: 58px;
-}
-
 .banner__link-more:visited {
   color: #fff;
 }
 
 .banner__link-more::after {
   content: url("../img/Arrow.svg");
-  margin-left: 5px;
+  margin-left: 7px;
 }
 
 .section__subtitle {
@@ -151,14 +157,14 @@ body {
 
 .products__product-card {
   margin: 0 0 25px 0;
-  /* background-color: rgb(160, 32, 32); */
+  /* background-color: rgb(160, 32, 32); */ /* для проверки */
 }
 
 .product-card {
   width: 230px;
   position: relative;
   padding: 0 12px;
-  height: 261px;
+  /* height: 261px;   */
   /* border: 1px solid rgb(23, 125, 209); */
 }
 
@@ -187,8 +193,6 @@ body {
   display: inline-block;
   font-size: 12px;
   font-weight: 400;
-  text-align: left;
-  /* margin-left: -15px; */
   margin-bottom: 5px;
 }
 
@@ -198,12 +202,8 @@ body {
   align-items: center;
 }
 
-/* .product-card__colors {} */
-
 .circles {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
 
 .circles__link {
@@ -254,7 +254,6 @@ body {
 .product-card__price {
   font-size: 14px;
   font-weight: 700;
-  /* margin-right: 40px; */
 }
 
 .video-block__slogan {

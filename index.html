@@ -6,17 +6,22 @@
   <title>Axion</title>
   <link rel="stylesheet" href="./fonts/fonts.css">
   <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/media.css">
 </head>
 <body>
 
   <div class="container">
-  <header class="header"><!-- блок 'header' -->
+    <header class="header"><!-- блок 'header' -->
+      <div class="logo header__logo">
+        <a href="/" class="header__logo-link">
+          <img src="./img/logo.svg" alt="Axion" class="header__logo-img"><!-- Элемент блока 'header' -->
+        </a> <!-- /.header__logo-link -->
+      </div> <!-- /.header__logo -->
+      <a href="#" class="logo-mobile header__logo-mobile">
+        <img src="./img/logo-2.svg" alt="logo Axion">
+      </a>
       <nav class="navbar header__navbar">
-        <div class="logo header__logo">
-          <a href="/" class="header__logo-link">
-            <img src="./img/logo.png" alt="Axion" class="header__logo-img"><!-- Элемент блока 'header' -->
-          </a> <!-- /.header__logo-link -->
-        </div> <!-- /.header__logo -->
+        <div class="empty"></div><!-- Изначально здесь был логотип <header-logo>, но при адаптиве я его вынес на уровень выше, чтоб можно было скрыть nav, после чего верстка построеная с помощью nth child(n) поехала, проще добавить пустой элемент чем переписать все номера nth child -->
         <div class="navbar__item"><a href="" class="navbar__link">Shop</a></div>
         <div class="navbar__item"><a href="" class="navbar__link">News</a></div>
         <div class="navbar__item"><a href="" class="navbar__link">Team</a></div>
@@ -34,6 +39,7 @@
         <div class="navbar__item"><a href="" class="navbar__link">Cart</a></div>
         <div class="navbar__item"><a href="" class="navbar__link"><img src="./img/eng.svg" alt="" class="lang"></a></div>
       </nav><!-- /.navbar header__navbar -->
+      <button class="burger"></button>
     </header><!-- /.header -->
     
     <section class="section market-section">
@@ -119,10 +125,8 @@
         </div>
       </div>
     </section>
-  </div>
   
-<section class="section second-section">
-  <div class="container">
+  <section class="section second-section">
     <div class="video-block second-section__video-block">
       <div class="video-block__pic">
         <img src="" alt="">
@@ -159,22 +163,20 @@
         <span class="stories-card__publication-date">29.07.2018</span>
       </div>
     </div>
-    
-    <div class="gallery second-section__gallery">
-      <h3 class="hashtag gallery__hashtag">#AxionFootwear</h3>
-      <div class="gallery__item"><a href="#" class="gallery__post"><img src="./img/gallery/gallery-1.png" alt="photo from instagram" class="gallery__photo"></a></div>
-      <div class="gallery__item"><a href="#" class="gallery__post"><img src="./img/gallery/gallery-2.png" alt="photo from instagram" class="gallery__photo"></a></div>
-      <div class="gallery__item"><a href="#" class="gallery__post"><img src="./img/gallery/gallery-3.png" alt="photo from instagram" class="gallery__photo"></a></div>
-      <div class="gallery__item"><a href="#" class="gallery__post"><img src="./img/gallery/gallery-4.png" alt="photo from instagram" class="gallery__photo"></a></div>
-      <div class="gallery__item"><a href="#" class="gallery__post"><img src="./img/gallery/gallery-5.png" alt="photo from instagram" class="gallery__photo"></a></div>
-      <div class="gallery__item"><a href="#" class="gallery__post"><img src="./img/gallery/gallery-6.png" alt="photo from instagram" class="gallery__photo"></a></div>
-    </div>
-  </div>
-</section>
+      
+      <div class="gallery second-section__gallery">
+        <h3 class="hashtag gallery__hashtag">#AxionFootwear</h3>
+        <div class="gallery__item"><a href="#" class="gallery__post"><img src="./img/gallery/gallery-1.png" alt="photo from instagram" class="gallery__photo"></a></div>
+        <div class="gallery__item"><a href="#" class="gallery__post"><img src="./img/gallery/gallery-2.png" alt="photo from instagram" class="gallery__photo"></a></div>
+        <div class="gallery__item"><a href="#" class="gallery__post"><img src="./img/gallery/gallery-3.png" alt="photo from instagram" class="gallery__photo"></a></div>
+        <div class="gallery__item"><a href="#" class="gallery__post"><img src="./img/gallery/gallery-4.png" alt="photo from instagram" class="gallery__photo"></a></div>
+        <div class="gallery__item"><a href="#" class="gallery__post"><img src="./img/gallery/gallery-5.png" alt="photo from instagram" class="gallery__photo"></a></div>
+        <div class="gallery__item"><a href="#" class="gallery__post"><img src="./img/gallery/gallery-6.png" alt="photo from instagram" class="gallery__photo"></a></div>
+      </div>
+    </section>
 
-<footer class="footer">
-  <div class="container">
-    <navigation class="footer-navbar">
+  <footer class="footer">
+    <nav class="footer-navbar">
       <ul class="footer-navbar__column">
         <li class="footer-navbar__item"><span class="footer-navbar__title">My account</span></li>
         <li class="footer-navbar__item"><a href="" class="footer-navbar__link">Login</a></li>
@@ -212,10 +214,9 @@
           <a href="" class="social__link"><img src="./img/social/pinterest.png" alt="logo"></a>
         </div>
       </div>
-    </navigation>
+    </nav>
     <span class="copyright">© 2019 Axion. All rights reserved.</span>
-  </div>
-</footer>
-
+  </footer>
+</div>
 </body>
 </html>
