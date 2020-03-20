@@ -24,15 +24,8 @@ body {
   display: flex;
 }
 
-.logo {
-  display: inline-block;
-}
-
 .header__logo {
-  margin-right: 45px;
-  margin-top: 5px;
-  max-width: 55px;
-  max-height: 56px;
+  margin-right: 43px;
 }
 
 .header__logo-img {
@@ -45,8 +38,9 @@ body {
 }
 
 .navbar {
+  width: 100%;
   display: flex;
-  /* justify-content: space-around; */
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -54,11 +48,16 @@ body {
   margin-right: 35px;
 }
 
-.navbar__item:nth-child(6) {
-  margin-right: 192px;
+.navbar__left-side, .navbar__right-side {
+  display: flex;
+  align-items: center;
 }
 
-.navbar__item:nth-child(9)::after {
+/* .navbar__item:nth-child(6) {
+  margin-right: 192px;
+} */
+
+.navbar__right-side .navbar__item:nth-child(3)::after {
   content: "1";
   display: inline-block;
   font-size: 9px;

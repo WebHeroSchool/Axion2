@@ -21,23 +21,27 @@
         <img src="./img/logo-2.svg" alt="logo Axion">
       </a>
       <nav class="navbar header__navbar">
-        <div class="empty"></div><!-- Изначально здесь был логотип <header-logo>, но при адаптиве я его вынес на уровень выше, чтоб можно было скрыть nav, после чего верстка построеная с помощью nth child(n) поехала, проще добавить пустой элемент чем переписать все номера nth child -->
-        <div class="navbar__item"><a href="" class="navbar__link">Shop</a></div>
-        <div class="navbar__item"><a href="" class="navbar__link">News</a></div>
-        <div class="navbar__item"><a href="" class="navbar__link">Team</a></div>
-        <div class="navbar__item"><a href="" class="navbar__link">Legacy</a></div>
-        <div class="navbar__item"><a href="" class="navbar__link">Help</a></div>
-        <div class="navbar__item">
-          <form action="" class="search-form navbar__search-form">
-            <input type="text" class="search-form__input">
-            <a href="" class="navbar__link search-form__link">
-              <img src="./img/search.png" alt="">
-            </a>
-          </form>
+        <div class="navbar__left-side">
+          <div class="empty"></div><!-- Изначально здесь был логотип <header-logo>, но при адаптиве я его вынес на уровень выше, чтоб можно было скрыть nav, после чего верстка построеная с помощью nth child(n) поехала, проще добавить пустой элемент чем переписать все номера nth child -->
+            <div class="navbar__item"><a href="" class="navbar__link">Shop</a></div>
+            <div class="navbar__item"><a href="" class="navbar__link">News</a></div>
+            <div class="navbar__item"><a href="" class="navbar__link">Team</a></div>
+            <div class="navbar__item"><a href="" class="navbar__link">Legacy</a></div>
+            <div class="navbar__item"><a href="" class="navbar__link">Help</a></div>
         </div>
-        <div class="navbar__item"><a href="" class="navbar__link">Sign in</a></div>
-        <div class="navbar__item"><a href="" class="navbar__link">Cart</a></div>
-        <div class="navbar__item"><a href="" class="navbar__link"><img src="./img/eng.svg" alt="" class="lang"></a></div>
+        <div class="navbar__right-side">
+          <div class="navbar__item">
+            <form action="" class="search-form navbar__search-form">
+              <input type="text" class="search-form__input">
+              <a href="" class="navbar__link search-form__link">
+                <img src="./img/search.png" alt="">
+              </a>
+            </form>
+          </div>
+          <div class="navbar__item"><a href="" class="navbar__link">Sign in</a></div>
+          <div class="navbar__item"><a href="" class="navbar__link">Cart</a></div>
+          <div class="navbar__item"><a href="" class="navbar__link"><img src="./img/eng.svg" alt="" class="lang"></a></div>
+        </div>
       </nav><!-- /.navbar header__navbar -->
       <button class="burger"></button>
     </header><!-- /.header -->
