@@ -264,28 +264,24 @@ body {
 /* Promo-section */
 
 .promo-section {
-  padding: 27px 0 80px 0;
+  padding: 24px 0 79px 0;
 }
 
 .video-block {
-  padding: 0 33px;
+  padding: 64px 33px;
   display: flex;
-  /* justify-content: space-between; */
-  align-items: center;
-  max-width: 1030px;
+  /* align-items: center; */
+  /* max-width: 1030px; */
   min-height: 495px;
   background-color: #000000;
 }
 
 .video-block__picture-wrapper {
-  position: relative;
-  margin-right: 42px;
+  margin: 4px 42px 0 0;
 }
 
-.video-block__play-button {
-  position: absolute;
-  top: 42%;
-  left: calc(45% + 3px);
+.video-block__text-wrapper {
+  margin-top: 89px;
 }
 
 .video-block__slogan {
@@ -297,14 +293,16 @@ body {
   text-transform: uppercase;
 }
 
-.wide {
+/* .wide {
   letter-spacing: .6em;
-}
+} */
 
 .video-block__text {
-  margin: 0 0 0 0;
-  max-width: 260px;
+  margin: 13px 0 20px 0;
+  min-width: 262px;
+  max-width: 272px;
   font-size: 14px;
+  line-height: 17px;
   font-weight: 400;
   color: #ffffff;
   /* line-height: 21.33px; */
@@ -314,8 +312,7 @@ body {
 
 .promo-section__subtitle {
   text-align: center;
-  margin-top: 75px;
-  margin-bottom: 42px;
+  margin: 75px 0 41px 0;
 }
 
 .stories {
@@ -340,7 +337,7 @@ body {
 .stories-card__title {
   font-size: 18px;
   font-weight: 700;
-  margin-bottom: 7px;
+  margin: 27px 0 8px 0;
 }
 
 .stories-card__descr {
@@ -409,8 +406,7 @@ body {
 }
 /* FOOTER */
 .footer {
-  padding: 68px 0 0 6px;
-  /* min-width: 1170px; */
+  padding: 67px 0 0 6px;
   height: 297px;
   background-color: #000;
   color: #fff;
@@ -421,12 +417,11 @@ body {
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
-  /* align-items: baseline; */
 }
 
 .footer-navbar__title {
   display: block;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
   font-weight: 700;
   text-transform: uppercase;
 }
@@ -438,23 +433,27 @@ body {
 
 .footer-navbar__link {
   display: block;
-  margin-bottom: 5px;
+  margin-bottom: 4.5px;
   color: #fff
 }
 
 .footer-navbar__column--social>.footer-navbar__title {
-  margin-bottom: 5px;
+  margin-bottom: 4px;
 }
 
 .footer-navbar__sign-up {
   display: block;
-  margin: 11px 0 35px 0;
+  margin: 11px 0 36px 0;
+  padding-top: 8px;
   width: 137px;
-  height: 31px;
+  min-height: 30px;
   color: #fff;
   border: 2px solid #fff;
   text-align: center;
-  line-height: 25px;
+  /* line-height: 25px; */
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 .social {
@@ -463,6 +462,7 @@ body {
   justify-content: space-between;
 }
 
-.footer.copyright {
+.copyright {
+  margin-top: 52px;
   text-align: center;
 }
