@@ -22,7 +22,61 @@
     width: 61px;
     height: 55px;
   }
+  /* Promo-section */
 
+  .promo-section {
+    padding: 78px 0 95px 0;
+  }
+
+  .video-block {
+    padding: 55px 30px;
+    min-height: 441px;
+  }
+  .video-block__picture-wrapper {
+    margin-right: 38px;
+  }
+  .video-block__pic {
+    display: inline-block;
+    width: 579px;
+  }
+  .video-block__text-wrapper {
+    margin-top: 77px;
+  }
+  .video-block__text {
+    min-width: auto;
+    max-width: auto;
+    margin: 7px 0 15px 0;
+    font-size: 13px;
+    line-height: 16px;
+  }
+  .link-more::after {
+    margin-left: 15px;
+  }
+  .promo-section__subtitle {
+    margin-top: 92px;
+  }
+  .stories-card {
+    max-width: 277px;
+  }
+  .stories-card__pic {
+    max-width: 100%;
+    min-height: 147px;
+  }
+  .stories-card__descr {
+    margin-bottom: 22px;
+    font-size: 13px;
+    line-height: 16px;
+  }
+  .stories-card__link-more::after {
+    content: url("../img/Arrow-black-25.svg");
+    margin-left: 0px;
+  }
+  .gallery__hashtag {
+    margin: 87px 0 8px 0;
+  }
+  .footer-navbar__sign-up {
+    margin: 12px 0 35px 0;
+  }
   .navbar__right-side {
     margin-top: 3px;
   }
