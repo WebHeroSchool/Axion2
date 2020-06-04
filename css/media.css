@@ -232,7 +232,7 @@
   
   .banner {
     padding: 81px 0 0 43px;
-    min-height: 416px;
+    min-height: 417px;
     background-position: 17%;
   }
   
@@ -240,15 +240,165 @@
     font-size: 50px;
     line-height: 48px;
     max-width: 516px;
-    margin-bottom: 43px;
+    margin-bottom: 44px;
   }
 
   .banner__link-more {
     font-size: 20px;
   }
-  
-  .banner__link-more::after { /* Разобраться почему не управляется ширина */
+  .promo-section {
+    position: relative;
+    padding: 0 0 124px 0;
+    /* background-image: linear-gradient( #000 85%, #fff 0%); */
+    background-color: #000;
+    color: #fff;
+  }
+  .promo-section::before {
+    content: '';
+    position: absolute;
+    top: -35px;
+    z-index: 2;
+    width: 100%;
+    height: 55px;
+    transform: skewY(2.6deg);
+    background-color: #000;
+  }
+  .promo-section__subtitle {
+    margin-top: 42px;
+  }
+  .promo-section__stories {
+    max-width: 680px;
+    margin: 0 auto;
+  }
+  .stories-card {
+    max-width: 312px;
+  }
+  .stories-card:last-child {
+    display: none;
+  }
+  .stories-card__pic {
+    max-width: 100%;
+    min-height: 166px;
+  }
+  .stories-card__title {
+    margin-bottom: 8px;
+    font-size: 25px;
+  }
+  .stories-card__descr {
+    margin-bottom: 37px;
+    font-size: 20px;
+    line-height: 25px;
+  }
+  .stories-card__wrapper {
+    align-items: center;
+  }
+  .stories-card__link-more {
+    font-size: 20px;
+    color: #fff;
+  }
+  .stories-card__link-more::after {
+    content: url(../img/Arrow-768-white.png);
     margin-left: 13px;
+  }
+  .stories-card__link-more:visited {
+    color: #fff;
+  }
+  .stories-card__publication-date {
+    font-size: 15px;
+    color: #D1D1D1;
+    opacity: 1;
+  }
+  .gallery__hashtag {
+    margin: 120px 45px 12px 0;
+    font-size: 30px;
+    /* line-height: 29px; */
+    color: #E8E8E8;
+    opacity: 1;
+  }
+  .gallery {
+    position: relative;
+    z-index: 2;
+    width: 680px;
+    margin: 0 auto ;
+    flex-wrap: wrap;
+  }
+  .gallery__photo {
+    width: calc(100% / 4);
+    border-radius: 0;
+  }
+  .gallery__photo:hover {
+    border-radius: 0;
+  }
+  .additional {
+    display: block;
+  }
+  .footer {
+    position: relative;
+    z-index: 0;
+    padding: 27px 0 0 0px;
+    height: 305px;
+    /* background-color: rgb(53, 7, 7); */
+  }
+  .footer::before {
+    content: '';
+    position: absolute;
+    bottom: 280px;
+    z-index: 0;
+    width: 100%;
+    height: 360px;
+    transform: skewY(2.6deg);
+    background-color: #fff;
+  }
+  .footer-navbar {
+    max-width: 100%;
+    /* margin: 0px 0 0 0; */
+    /* padding: 0 0 0 0; */
+    /* display: flex; */
+    justify-content: space-evenly;
+  }
+  .footer-navbar__column {
+    min-width: 158px;
+    margin: 30px 0;
+  }
+  .footer-navbar__sale-offer {
+    display: inline-block;
+    width: 155px;
+  }
+  .copyright {
+    margin-top: 26px;
+  }
+  
+  .banner__link-more::after {
+    content: url("../img/Arrow-768.svg");
+    margin-left: 11px;
+  }
+  .video-block {
+    flex-direction: column;
+    padding: 0 35px;
+    min-height: 641px;
+  }
+  .video-block__text-wrapper {
+    text-align: center;
+    order: -1;
+    margin-top: 0;
+  }
+  .video-block__slogan {
+    margin-top: 34px;
+    font-size: 30px;
+    line-height: 37px
+  }
+  .video-block__text {
+    max-width: 99%;
+    margin: 14px 0 27px 5px;
+    line-height: 25.47px;
+    font-size: 20px;
+  }
+  .video-block__link {
+    display: none;
+  }
+  .video-block__pic {
+    width: 698px;
+    /* height: 373.58px; */
   }
   
   /* ---------------------------------------------- */
@@ -258,7 +408,7 @@
   }
 
   .market-section__subtitle {
-    margin: 62px 18px 28px 0;
+    margin: 62px 18px 24px 0;
   }
 
 

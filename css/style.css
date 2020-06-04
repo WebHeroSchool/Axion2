@@ -404,6 +404,10 @@ body {
   -o-filter: grayscale(100%);
   filter: gray; /* IE 6-9 */
 }
+.additional {
+  display: none;
+}
+
 /* FOOTER */
 .footer {
   padding: 67px 0 0 6px;
