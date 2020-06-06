@@ -10,7 +10,7 @@ body {
   font-family: "Gotham Pro";
   font-weight: 400;
   font-size: 12px;
-  margin: 0; /* for PP */
+  margin: 0;
 }
 
 .container {
@@ -53,10 +53,6 @@ body {
   align-items: center;
 }
 
-/* .navbar__item:nth-child(6) {
-  margin-right: 192px;
-} */
-
 .navbar__right-side .navbar__item:nth-child(3)::after {
   content: "1";
   display: inline-block;
@@ -85,7 +81,7 @@ body {
 .search-form {
   width: 178px;
   border-bottom: 1px solid #000;
-  margin-top: 6px; /* for PP */
+  margin-top: 6px;
 }
 
 .search-form__input {
@@ -97,9 +93,6 @@ body {
 .burger {
   display: none;
 }
-
-
-/* ------------------- Стили 1 секции -------------- */
 
 .market-section {
   padding-top: 19px;
@@ -160,7 +153,6 @@ body {
 
 .products__product-card {
   margin: 0 0 25px 0;
-  /* background-color: rgb(160, 32, 32); */ /* для проверки */
 }
 
 .product-card {
@@ -168,8 +160,6 @@ body {
   width: 230px;
   position: relative;
   padding: 0 12px;
-  /* height: 261px;   */
-  /* border: 1px solid rgb(23, 125, 209); */
 }
 
 .product-card::after {
@@ -177,7 +167,6 @@ body {
   position: absolute;
   top: 40px;
   right: 108%; /* Найти лучшее решение */
-  /* display: inline-block; */
   width: 1px;
   height: 100px;
   background:  #000000;
@@ -268,11 +257,9 @@ body {
 }
 
 .video-block {
-  padding: 64px 33px;
   display: flex;
-  /* align-items: center; */
-  /* max-width: 1030px; */
   min-height: 495px;
+  padding: 64px 33px;
   background-color: #000000;
 }
 
@@ -285,7 +272,7 @@ body {
 }
 
 .video-block__slogan {
-  margin: 0 0 0 0;
+  margin: 0;
   font-size: 22px;
   line-height: 29px;
   font-weight: 700;
@@ -305,7 +292,6 @@ body {
   line-height: 17px;
   font-weight: 400;
   color: #ffffff;
-  /* line-height: 21.33px; */
 }
 
 /* stories */
@@ -341,7 +327,6 @@ body {
 }
 
 .stories-card__descr {
-  /* max-width: 99%; */
   display: inline-block;
   margin-bottom: 13px;
   font-size: 14px;
@@ -392,7 +377,7 @@ body {
 
 .gallery__photo:hover {
   filter: grayscale(0%);
-  border: 1px solid rgb(80, 121, 207); /* Параметры рамки */
+  border: 1px solid rgb(80, 121, 207);
   border-radius: 50%;
 }
 
@@ -454,7 +439,6 @@ body {
   color: #fff;
   border: 2px solid #fff;
   text-align: center;
-  /* line-height: 25px; */
   font-size: 10px;
   font-weight: 700;
   text-transform: uppercase;
