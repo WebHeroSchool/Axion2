@@ -11,7 +11,7 @@ a {
 }
 
 body {
-  font-family: "Gotham Pro";
+  font-family: "Gotham Pro", sans-serif;;
   font-weight: 400;
   font-size: 12px;
   margin: 0;
@@ -176,7 +176,7 @@ body {
   right: 108%; /* Найти лучшее решение */
   width: 1px;
   height: 100px;
-  background:  #000;
+  background: #000;
   opacity: .2;
 }
 
@@ -222,6 +222,7 @@ body {
 .circles__link--red {
   background-color: #b62e3c;
 }
+
 .circles__link--yellow {
   background-color: #fdb431;
 }
@@ -384,8 +385,8 @@ body {
   -moz-filter: grayscale(100%);
   -ms-filter: grayscale(100%);
   -o-filter: grayscale(100%);
-  filter: gray; /* IE 6-9 */
 }
+
 .additional {
   display: none;
 }
@@ -424,7 +425,7 @@ body {
   transition: .4s;
 }
 
-.footer-navbar__column--social>.footer-navbar__title {
+.footer-navbar__column--social > .footer-navbar__title {
   margin-bottom: 4px;
 }
 
