@@ -39,7 +39,7 @@
           </div>
           <div class="navbar__item"><a href="" class="navbar__link">Sign in</a></div>
           <div class="navbar__item"><a href="" class="navbar__link">Cart</a></div>
-          <div class="navbar__item"><a href="" class="navbar__link"><img src="./img/eng.svg" alt="" class="lang"></a></div>
+          <div class="navbar__item"><a href="" class="navbar__link unhover"><img src="./img/eng.svg" alt="" class="lang"></a></div>
         </div>
       </nav><!-- /.navbar header__navbar -->
       <button class="burger"></button>
@@ -146,7 +146,13 @@
       <h2 class="section__subtitle promo-section__subtitle">Recent stories</h2>
       <div class="stories promo-section__stories">
         <div class="stories-card">
-          <img src="./img/stories-1.png" alt="stories" class="stories-card__pic">
+          <picture>
+            <source srcset="./img/stories-01-mobile.png" media="(max-width: 375px)">
+            <!-- <source srcset="./img/stories-1.png" media="(max-width: 768px)"> -->
+            <source srcset="./img/stories-01.png" media="(max-width: 1024px)">
+            <img src="./img/stories-1.png" alt="stories" class="stories-card__pic">
+          </picture>
+          <!-- <img src="./img/stories-1.png" alt="stories" class="stories-card__pic"> -->
           <h4 class="stories-card__title">Presents Justin Anagoa</h4>
           <span class="stories-card__descr">Anagoa’s been a part of the skater’s family ever since his early teenage years. He’s been known to go big on and off the board, but it’s been rare we get a glimpse into how Anagoa lives his day-to-day, to see what makes Anagoa tick.</span>
           <div class="stories-card__wrapper">
