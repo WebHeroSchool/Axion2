@@ -108,8 +108,6 @@ body {
   min-height: 280px;
   padding: 65px 0 0 58px;
   background-image: url("../img/street.jpg");
-
-  /* border: 1px solid transparent; без этой границы верхний отступ заголовка считался не от края баннера а извне...отодвинул заголовок падингом банера */
 }
 
 .banner__title {
@@ -163,7 +161,6 @@ body {
 }
 
 .product-card {
-  /* width: calc(100% / 4); */
   width: 230px;
   position: relative;
   padding: 0 12px;
@@ -173,7 +170,7 @@ body {
   content: "";
   position: absolute;
   top: 40px;
-  right: 108%; /* Найти лучшее решение */
+  right: 108%;
   width: 1px;
   height: 100px;
   background: #000;
@@ -256,8 +253,6 @@ body {
   font-weight: 700;
 }
 
-/* Promo-section */
-
 .promo-section {
   padding: 24px 0 79px 0;
 }
@@ -296,8 +291,6 @@ body {
   color: #fff;
 }
 
-/* stories */
-
 .promo-section__subtitle {
   text-align: center;
   margin: 75px 0 41px 0;
@@ -318,7 +311,6 @@ body {
 }
 
 .stories-card {
-  /* max-width: calc(100% / 3); */
   max-width: 307px;
 }
 
@@ -360,8 +352,6 @@ body {
   text-transform: uppercase;
 }
 
-/* gallery */
-
 .gallery__hashtag {
   margin-bottom: 9px;
   text-align: right;
@@ -380,7 +370,7 @@ body {
 
 .monochrome {
   filter: grayscale(100%);
-  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  -webkit-filter: grayscale(100%);
   -moz-filter: grayscale(100%);
   -ms-filter: grayscale(100%);
   -o-filter: grayscale(100%);
@@ -390,7 +380,6 @@ body {
   display: none;
 }
 
-/* FOOTER */
 .footer {
   padding: 67px 0 0 6px;
   height: 297px;
@@ -454,7 +443,6 @@ body {
   text-align: center;
 }
 
-/* hovers */
 .navbar__link:hover,
 .link-more:hover {
   background-color: rgba(128, 128, 128, .699);
@@ -489,7 +477,6 @@ body {
   transform: scale(1.5);
 }
 
-/* hovers off */
 .unhover:hover {
   background-color: inherit;
 }
