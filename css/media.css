@@ -2,7 +2,7 @@
   .container {
     max-width: 970px;
   }
-  
+
   .video-block {
     padding: 55px 30px;
     min-height: 441px;
@@ -530,6 +530,7 @@
 
   .promo-section__subtitle {
     margin: 42px 0 43px 0;
+
     /* margin-top: 42px; */
   }
 
@@ -549,9 +550,6 @@
   .stories-card__pic {
     max-width: 100%;
     min-height: 166px;
-    /* min-height: 100%; */
-
-    /* object-fit: contain; */
   }
 
   .stories-card__title {
@@ -827,7 +825,7 @@
   .banner {
     padding: 50px 0 0 48px;
     min-height: 192px;
-    background-position: 20% ;
+    background-position: 20%;
   }
   
   .banner__title {
@@ -1035,5 +1033,5 @@
 
   .video-block__text {
     max-width: 99%;
-  }  
+  }
 }
