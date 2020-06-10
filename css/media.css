@@ -683,8 +683,7 @@
 
   .stories-card__pic {
     margin: 0 auto;
-    max-width: 100%;
-    /* min-height: 100%; */
+    width: 95%;
     display: block;
   }
 
@@ -951,6 +950,7 @@
 
   .stories-card__pic {
     margin-left: 1px;
+    width: 100%;
     min-height: 148px;
   }
 
